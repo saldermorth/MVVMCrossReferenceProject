@@ -8,7 +8,7 @@ namespace MvxStarter.Core.Models
 {
     public class MessageModel
     {
-                public DateTime TimeWritten { get; set; }
+        public DateTime TimeWritten { get; set; }
         public string ActiveMessage { get; set; }
         public string UserAlias { get; set; }
 
