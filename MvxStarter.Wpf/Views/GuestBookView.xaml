@@ -15,7 +15,11 @@
             <TextBox Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,15"/>
             <TextBlock Text="LastName"/>
             <TextBox Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,15"/>
-            <TextBox Text="{Binding FulNamn}" FontSize="23"></TextBox>
+            <TextBox Text="{Binding FullName}" FontSize="23"></TextBox>
+            <Button mvx:Bi.nd="Command AddGuestCommand" IsEnabled="{Binding CanAddGuest}">Add Guest</Button>
+            <DataGrid ItemsSource="{Binding People}" AutoGenerateColumns="True">
+                
+            </DataGrid>
         </StackPanel> 
     </Grid>
 </views:MvxWpfView>
